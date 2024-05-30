@@ -34,3 +34,14 @@ L'utilisation des media queries pour adapter le design à différentes tailles d
 Images et ressources :
 
 Optimiser les images pour différentes résolutions et assurer un chargement rapide sans compromettre la qualité visuelle a été un défi.
+
+Difficultés Rencontrées
+Compatibilité des Navigateurs :
+
+Assurer une apparence cohérente sur différents navigateurs (Chrome, Firefox, Safari, Edge) a nécessité des ajustements spécifiques.
+Responsive Design :
+
+Adapter la landing page à différentes tailles d'écran a présenté des défis, notamment pour maintenir l'intégrité du design sur les petits écrans.
+Optimisation des Performances :
+
+Optimiser les images et le code CSS pour assurer des temps de chargement rapides sans compromettre la qualité visuelle a été crucial.
