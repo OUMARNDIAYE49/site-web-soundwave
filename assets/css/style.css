@@ -1,0 +1,479 @@
+:root{
+    --primary: #1762A7;
+    --bg-bleu:#2F303A;
+    --ross-color:#B8375E;
+}
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto' sans-serif;
+    font-size: 16px;
+}
+
+
+
+#header{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    background-color: var(--bg-bleu);
+    justify-content: space-between;
+    padding: 0 40px 0 40px;
+} 
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+
+}
+.logo img{
+  width:150px ;
+}
+nav ul{
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+/* section content header */
+#content-header{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    background-color: var(--bg-bleu);
+    height: 550px;
+    padding: 0 40px 0 40px;
+}
+.fell-music{
+    display: flex ;
+    width: 100%;
+    
+}
+.fell-left, .fell-right {
+    width: 50%;
+    display: flex;
+}
+
+.fell-right{
+    display: flex;
+    flex-direction: column;
+    padding: 120px 0 100px 00px
+}
+.fell-right h1{
+    font-size: 35px;
+    color: white;
+}
+.fell-right p{
+    font-size: 20px;
+    color: white;
+}
+.fell-right img{
+   width: 400px;
+  height: 200px;
+  position: absolute;
+  margin: 220px 0 0 280px;
+}
+.fell-right button {
+    width: 100%;
+    max-width: 120px; 
+    min-height: 50px;  
+    color: white;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--primary);
+  }
+
+#discover{
+    width: 90%;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    background-color: var(--bg-bleu);
+    padding: 0 40px 0 40px;
+}
+.content-discover{
+    display: flex;
+    width: 100%;
+    padding-top: 120px;
+    
+}
+.discover-left{
+    width: 50%;
+    gap: 60px;
+}
+.discover-right{
+    width: 50%;
+}
+.discover-right img{
+    width: 100%;
+    height: 400px;
+}
+.discover-left h2{
+    font-size: 45px;
+    color: white;
+}
+.discover-left p{
+    color: white;
+    font-size: 20px;
+    
+}
+.icone{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    width: 70%;
+    gap: 10px;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+}
+.icone img{
+    width: 100px;
+    margin-top: 30px;
+}
+
+#fun{
+    width: 90%;
+    margin: auto;
+    height: 700px;
+    background-color:var(--bg-bleu);
+    display: flex;
+    padding: 0 40px 0 40px;
+}
+.content-fun{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.fun-left{
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+}
+.fun-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 100%px;
+    gap: 50px;
+   
+
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    height: 500px; 
+    gap: 30px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: black;
+}
+.formulaire{
+    margin-top: 30px;
+    gap: 50px;
+    
+    
+}
+.fun-right label{
+    display: block;
+    color: white;
+    gap: 50px;
+    height: 20px;
+    margin-top: 2px;
+    height: 31px;
+  margin-top: 25px;
+}
+.fun-right input{
+    width: 500px;
+    height: 50px;
+    background-color: black;
+    border: 3px solid var(--primary);
+    border-radius: 10px;
+}
+ .bouton button{
+  width: 495px;
+  margin-top: 380px;
+  height: 60px;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--primary);
+}
+
+.bouton{
+    position: absolute
+}
+
+
+.fun-left h1{
+    color: white;
+    font-size: 50px;
+}
+.fun-left span{
+    color:var(--ross-color);
+    font-size: 50px;
+}
+
+
+#footer{
+    width: 90%;
+    margin: auto;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    padding: 0 40px 0 40px;
+}
+.content-footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+.footer-left a {
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+  align-items: center;
+    justify-content: center;
+
+}
+.footer-left ul{
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
+    
+}
+.footer-right {
+    display: flex;
+    gap: 10px;
+    padding-right: 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.footer-right img {
+    display: flex;
+ width: 30px;
+ height: 30px;
+    
+
+}
+
+
+
+@media(max-width:400px){
+    #header{
+        width: 300px;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        margin-top: auto;
+    }
+    nav{
+        width: 300px;
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+    }
+    .logo img{
+        width: 100px;
+    }
+     ul a{
+        width: 100px;
+        margin-right: 0px;
+        font-size: 10px;
+    }
+    
+    #content-header{
+        flex-direction: column;
+        width: 300px;
+        margin: auto;
+    }
+    .fell-music{
+        flex-direction: column;
+    }
+    .fell-music img{
+        width: 280px;
+        height: 240px;
+    }
+    .fell-left{
+        display: flex;
+        width: 100%;
+    }
+    .fell-right{
+        flex-direction: column;
+        width: 100%;
+    }
+    .fell-right  h1{
+        font-size: 25px;
+    }
+    .fell-right  p{
+        font-size: 15px;
+    }
+    button{
+        width: 50px;
+        height: 15px;
+    }
+    .fell-right img{
+        width: 0px;
+    }
+    #discover{
+        width: 300px;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .content-discover{
+        flex-direction: column;
+        width:300px;
+
+    }
+    .discover-left{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        
+    }
+    .discover-left h2{
+        font-size: 25px;
+    }
+    .discover-left p{
+        font-size: 15px;
+       m
+    }
+
+    .icone{
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-left: 28px;
+
+    }
+    .item {
+        width: 90px;
+        height: 80px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .item img{
+        width: 40px;
+        height: 45px;
+    }
+    .item p{
+        font-size: 10px;
+    }
+    .discover-right{
+        flex-direction: column;
+        width: 100%;
+    }
+    .discover-right img{
+        width: 250px;
+        height: 200px;
+    }
+
+    #fun{
+        width: 300px;
+        flex-direction: column;
+        margin: auto;   
+    }
+    .content-fun{
+        flex-direction: column;
+        width:300px;
+
+    }
+    .content-fun h1, .content-fun span{
+        font-size: 25px;
+    }
+    .fun-right{
+        flex-direction: column;
+        width:300px;
+        align-items: center;
+        text-align: center;
+    }
+    .contact{
+        width: 250px;
+        height: 350px;
+        background-color: black;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: -75px;
+        margin-top: 50px;
+    }
+    .formulaire{
+        width: 200px;
+        margin-top: -100px;
+    
+    }
+    label{
+        width: 150px;
+        margin-left: 0px;
+    }
+     .formulaire input{
+        width: 150px;
+        height: 30px;
+    }
+    .bouton button{
+        width: 150px;
+        height: 30px;
+        margin-top: 250px;
+    }
+    #footer{
+        width: 300px;
+        display: flex;
+        margin: auto;   
+    }
+    .content-footer{
+        display: flex;
+        width:300px;
+        justify-content: space-between;
+        margin: auto;
+    }
+    .footer-left, .footer-right{
+        width: 150px;
+        display: flex;
+    }
+    .footer-left ul a{
+        font-size: 10px;
+        margin-left: -100px;
+    }
+    .footer-right{
+        display: flex;
+        font-size: 10px;
+        margin-left: -25px;
+    }
+    .footer-right img{
+        width: 20px;
+        height: 20px;
+    }
+
+
+}
