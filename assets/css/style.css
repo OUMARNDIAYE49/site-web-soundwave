@@ -44,7 +44,7 @@ a{
     color: white;
     text-decoration: none;
 }
-/* section content header */
+
 #content-header{
     width: 90%;
     margin: auto;
@@ -77,10 +77,10 @@ a{
     color: white;
 }
 .fell-right img{
-   width: 400px;
+   width: 350px;
   height: 200px;
-  position: absolute;
-  margin: 220px 0 0 280px;
+  /* position: absolute; */
+  margin: 20px 0 0 215px;
 }
 .fell-right button {
     width: 100%;
@@ -210,15 +210,17 @@ a{
     border: 3px solid var(--primary);
     border-radius: 10px;
 }
- .bouton button{
-  width: 495px;
-  margin-top: 380px;
-  height: 60px;
-  color: white;
-  border-radius: 10px;
-  border: none;
-  background-color: var(--primary);
-}
+
+
+.formulaire button{
+    width: 495px;
+    margin-top: 30px;
+    height: 60px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--primary);
+    }
 
 .bouton{
     position: absolute
@@ -278,56 +280,877 @@ a{
     
 
 }
+@media(max-width:700px){
 
-
-
-@media(max-width:400px){
     #header{
-        width: 300px;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        background-color: var(--bg-bleu);
+        justify-content: space-between;
+        padding: 0 40px 0 40px;
+    } 
+    nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        align-items: center;
+
+    }
+    .logo img{
+    width:150px ;
+    }
+    nav ul{
+        display: flex;
+        gap: 50px;
+        list-style-type: none;
+    }
+
+    a{
+        color: white;
+        text-decoration: none;
+    }
+
+    #content-header{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        background-color: var(--bg-bleu);
+        height: 550px;
+        padding: 0 40px 0 40px;
+    }
+    .fell-music{
+        display: flex ;
+        width: 100%;
+        
+    }
+    .fell-left, .fell-right {
+        width: 50%;
+        display: flex;
+    }
+
+    .fell-right{
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+    
+    }
+    .fell-right h1{
+        font-size: 30px;
+        color: white;
+    }
+    .fell-right p{
+        font-size: 15px;
+        color: white;
+    }
+    .fell-left img{
+    width: 100%;
+    
+   
+    }
+    .fell-right button {
+        width: 100%;
+        max-width: 120px; 
+    min-height: 50px; 
+        color: white;
+        border-radius: 10px;
+        border: none;
+
+        background-color: var(--primary);
+    }
+    .fell-right img{
+        display:none;
+        
+       
+        }
+
+    #discover{
+        width: 90%;
+        height: 350px;
+        margin: auto;
+        display: flex;
+        background-color: var(--bg-bleu);
+        padding: 0 40px 0 40px;
+    }
+    .content-discover{
+        display: flex;
+        width: 100%;
+        padding-top: 30px;
+        gap: 30px;
+    }
+    .discover-left{
+        width: 40%;
+        gap: 50px;
+        
+    }
+    .discover-right{
+        width: 50%;
+    }
+    .discover-right img{
+        width: 100%;
+        height: 300px;
+    }
+    .discover-left h2{
+        font-size: 30px;
+        color: white;
+    }
+    .discover-left p{
+        color: white;
+        font-size: 17px;
+        
+    }
+    .icone{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        width: 50%;
+        gap: 10px;
+    }
+    .item{
+        display: flex;
+        flex-direction: column;
+        width: 80px;
+        height: 105px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: black;
+    }
+    .icone img{
+        width: 60px;
+        margin-top: 30px;
+    }
+
+    #fun{
+        width: 90%;
+        margin: auto;
+        height: 500px;
+        background-color:var(--bg-bleu);
+        display: flex;
+        padding: 0 40px 0 40px;
+    }
+    .content-fun{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+    }
+    .fun-left{
+        width: 50%;
+        text-align: center;
+        align-items: center;
+        display: flex;
+       
+    }
+    .fun-right{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    
+
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+        justify-content: center;
+        height: 400px; 
+    
+        width: 100%;
+        border-radius: 15px;
+        background-color: black;
+    }
+    .formulaire{
+        width: 70%;
+        justify-content: center;        
+        gap: 10px;
+        height: 350px;
+        align-items: center;
+        margin-top: 0px;
+        
+        
+    }
+    .fun-right label{
+        display: block;
+        color: white;
+        height: 15px;
+    
+    }
+    .fun-right input{
+        width: 90%;
+        height: 35px;
+        background-color: black;
+        border: 3px solid var(--primary);
+        border-radius: 10px;
+    }
+    .formulaire button{
+    width: 90%;
+    margin-top: 30px;
+    height: 35px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--primary);
+    }
+
+
+    .fun-left h1{
+        color: white;
+        font-size: 50px;
+    }
+    .fun-left span{
+        color:var(--ross-color);
+        font-size: 50px;
+    }
+
+
+    #footer{
+        width: 90%;
+        margin: auto;
+        height: 50px;
+        background-color: black;
+        display: flex;
+        padding: 0 40px 0 40px;
+    }
+    .content-footer{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+    }
+    .footer-left a {
+        display: flex;
+        font-size: 20px;
+        text-align: center;
+    align-items: center;
+        justify-content: center;
+
+    }
+    .footer-left ul{
+        display: flex;
+        gap: 50px;
+        list-style-type: none;
+        
+    }
+    .footer-right {
+        display: flex;
+        gap: 10px;
+        padding-right: 30px;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    .footer-right img {
+        display: flex;
+    width: 30px;
+    height: 30px;
+        
+
+    }
+
+}
+
+@media(max-width:800px){
+
+    #header{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        background-color: var(--bg-bleu);
+        justify-content: space-between;
+        padding: 0 40px 0 40px;
+    } 
+    nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        align-items: center;
+
+    }
+    .logo img{
+    width:150px ;
+    }
+    nav ul{
+        display: flex;
+        gap: 50px;
+        list-style-type: none;
+    }
+
+    a{
+        color: white;
+        text-decoration: none;
+    }
+
+    #content-header{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        background-color: var(--bg-bleu);
+        height: 550px;
+        padding: 0 40px 0 40px;
+    }
+    .fell-music{
+        display: flex ;
+        width: 100%;
+        
+    }
+    .fell-left, .fell-right {
+        width: 50%;
+        display: flex;
+    }
+
+    .fell-right{
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+    
+    }
+    .fell-right h1{
+        font-size: 30px;
+        color: white;
+    }
+    .fell-right p{
+        font-size: 15px;
+        color: white;
+    }
+    .fell-left img{
+    width: 100%;
+    
+   
+    }
+    .fell-right button {
+        width: 100%;
+        max-width: 120px; 
+    min-height: 50px; 
+        color: white;
+        border-radius: 10px;
+        border: none;
+
+        background-color: var(--primary);
+    }
+    .fell-right img{
+        display:none;
+        
+       
+        }
+
+    #discover{
+        width: 90%;
+        height: 350px;
+        margin: auto;
+        display: flex;
+        background-color: var(--bg-bleu);
+        padding: 0 40px 0 40px;
+    }
+    .content-discover{
+        display: flex;
+        width: 100%;
+        padding-top: 30px;
+        gap: 50px;
+    }
+    .discover-left{
+        width: 50%;
+        gap: 50px;
+        
+    }
+    .discover-right{
+        width: 50%;
+    }
+    .discover-right img{
+        width: 100%;
+        height: 300px;
+    }
+    .discover-left h2{
+        font-size: 35px;
+        color: white;
+    }
+    .discover-left p{
+        color: white;
+        font-size: 20px;
+        
+    }
+    .icone{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        width: 50%;
+        gap: 10px;
+    }
+    .item{
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+        height: 125px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: black;
+    }
+    .icone img{
+        width: 80px;
+        margin-top: 30px;
+    }
+
+    #fun{
+        width: 90%;
+        margin: auto;
+        height: 500px;
+        background-color:var(--bg-bleu);
+        display: flex;
+        padding: 0 40px 0 40px;
+    }
+    .content-fun{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+    }
+    .fun-left{
+        width: 50%;
+        text-align: center;
+        align-items: center;
+        display: flex;
+       
+    }
+    .fun-right{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    
+
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+        justify-content: center;
+        height: 400px; 
+    
+        width: 100%;
+        border-radius: 15px;
+        background-color: black;
+    }
+    .formulaire{
+        width: 80%;
+        justify-content: center;        
+        gap: 10px;
+        height: 350px;
+        align-items: center;
+        margin-top: 0px;
+        
+        
+    }
+    .fun-right label{
+        display: block;
+        color: white;
+        height: 20px;
+    
+    }
+    .fun-right input{
+        width: 90%;
+        height: 45px;
+        background-color: black;
+        border: 3px solid var(--primary);
+        border-radius: 10px;
+    }
+    .formulaire button{
+    width: 90%;
+    margin-top: 30px;
+    height: 45px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--primary);
+    }
+
+
+    .fun-left h1{
+        color: white;
+        font-size: 50px;
+    }
+    .fun-left span{
+        color:var(--ross-color);
+        font-size: 50px;
+    }
+
+
+    #footer{
+        width: 90%;
+        margin: auto;
+        height: 50px;
+        background-color: black;
+        display: flex;
+        padding: 0 40px 0 40px;
+    }
+    .content-footer{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+    }
+    .footer-left a {
+        display: flex;
+        font-size: 20px;
+        text-align: center;
+    align-items: center;
+        justify-content: center;
+
+    }
+    .footer-left ul{
+        display: flex;
+        gap: 50px;
+        list-style-type: none;
+        
+    }
+    .footer-right {
+        display: flex;
+        gap: 10px;
+        padding-right: 30px;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    .footer-right img {
+        display: flex;
+    width: 30px;
+    height: 30px;
+        
+
+    }
+
+}
+
+@media(max-width:1200px){
+
+    #header{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        background-color: var(--bg-bleu);
+        justify-content: space-between;
+        padding: 0 40px 0 40px;
+    } 
+    nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        align-items: center;
+
+    }
+    .logo img{
+    width:150px ;
+    }
+    nav ul{
+        display: flex;
+        gap: 50px;
+        list-style-type: none;
+    }
+
+    a{
+        color: white;
+        text-decoration: none;
+    }
+
+    #content-header{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        background-color: var(--bg-bleu);
+        height: 550px;
+        padding: 0 40px 0 40px;
+    }
+    .fell-music{
+        display: flex ;
+        width: 100%;
+        
+    }
+    .fell-left, .fell-right {
+        width: 50%;
+        display: flex;
+    }
+
+    .fell-right{
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+    
+    }
+    .fell-right h1{
+        font-size: 30px;
+        color: white;
+    }
+    .fell-right p{
+        font-size: 15px;
+        color: white;
+    }
+    .fell-left img{
+    width: 100%;
+    
+   
+    }
+    .fell-right button {
+        width: 100%;
+        max-width: 120px; 
+    min-height: 50px; 
+        color: white;
+        border-radius: 10px;
+        border: none;
+
+        background-color: var(--primary);
+    }
+    .fell-right img{
+        display:none;
+        
+       
+        }
+
+    #discover{
+        width: 90%;
+        height: 350px;
+        margin: auto;
+        display: flex;
+        background-color: var(--bg-bleu);
+        padding: 0 40px 0 40px;
+    }
+    .content-discover{
+        display: flex;
+        width: 100%;
+        padding-top: 30px;
+        gap: 50px;
+    }
+    .discover-left{
+        width: 50%;
+        gap: 50px;
+        
+    }
+    .discover-right{
+        width: 50%;
+    }
+    .discover-right img{
+        width: 100%;
+        height: 300px;
+    }
+    .discover-left h2{
+        font-size: 35px;
+        color: white;
+    }
+    .discover-left p{
+        color: white;
+        font-size: 20px;
+        
+    }
+    .icone{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        width: 50%;
+        gap: 10px;
+    }
+    .item{
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+        height: 125px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: black;
+    }
+    .icone img{
+        width: 80px;
+        margin-top: 30px;
+    }
+
+    #fun{
+        width: 90%;
+        margin: auto;
+        height: 500px;
+        background-color:var(--bg-bleu);
+        display: flex;
+        padding: 0 40px 0 40px;
+    }
+    .content-fun{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+    }
+    .fun-left{
+        width: 50%;
+        text-align: center;
+        align-items: center;
+        display: flex;
+       
+    }
+    .fun-right{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    
+
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+        justify-content: center;
+        height: 400px; 
+    
+        width: 100%;
+        border-radius: 15px;
+        background-color: black;
+    }
+    .formulaire{
+        width: 80%;
+        justify-content: center;        
+        gap: 10px;
+        height: 350px;
+        align-items: center;
+        margin-top: 0px;
+        
+        
+    }
+    .fun-right label{
+        display: block;
+        color: white;
+        height: 20px;
+    
+    }
+    .fun-right input{
+        width: 90%;
+        height: 45px;
+        background-color: black;
+        border: 3px solid var(--primary);
+        border-radius: 10px;
+    }
+    .formulaire button{
+    width: 90%;
+    margin-top: 30px;
+    height: 45px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--primary);
+    }
+
+
+    .fun-left h1{
+        color: white;
+        font-size: 50px;
+    }
+    .fun-left span{
+        color:var(--ross-color);
+        font-size: 50px;
+    }
+
+
+    #footer{
+        width: 90%;
+        margin: auto;
+        height: 50px;
+        background-color: black;
+        display: flex;
+        padding: 0 40px 0 40px;
+    }
+    .content-footer{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+    }
+    .footer-left a {
+        display: flex;
+        font-size: 20px;
+        text-align: center;
+    align-items: center;
+        justify-content: center;
+
+    }
+    .footer-left ul{
+        display: flex;
+        gap: 50px;
+        list-style-type: none;
+        
+    }
+    .footer-right {
+        display: flex;
+        gap: 10px;
+        padding-right: 30px;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    .footer-right img {
+        display: flex;
+    width: 30px;
+    height: 30px;
+        
+
+    }
+
+}
+
+
+@media(max-width:600px){
+    #header{
+        width: 90%;
         flex-direction: column;
         justify-content: space-between;
         text-align: center;
         margin-top: auto;
     }
     nav{
-        width: 300px;
+        width: 100%;
         display: flex;
         margin: auto;
         justify-content: space-between;
-        text-align: center;
+        /* text-align: center; */
         align-items: center;
     }
     .logo img{
-        width: 100px;
+        width: 60%;
+        /* margin: auto; */
     }
+    nav ul {
+        display: flex;
+        gap: 10px;
+        list-style-type: none;
+      }
      ul a{
-        width: 100px;
-        margin-right: 0px;
-        font-size: 10px;
+        width: 40%px;
+        font-size: 15px;
     }
     
     #content-header{
         flex-direction: column;
-        width: 300px;
+        width: 90%;
         margin: auto;
     }
     .fell-music{
         flex-direction: column;
+        justify-content: center;
+
     }
     .fell-music img{
-        width: 280px;
-        height: 240px;
+        width: 90%px;
+        height: 300px;
     }
     .fell-left{
         display: flex;
-        width: 100%;
+        width: 90%;
     }
     .fell-right{
         flex-direction: column;
-        width: 100%;
-    }
+        width: 90%;
+        /* justify-content: center;
+        text-align: center;
+        align-items: center;
+    } */
     .fell-right  h1{
-        font-size: 25px;
+        font-size: 30px;
     }
     .fell-right  p{
         font-size: 15px;
@@ -336,47 +1159,50 @@ a{
         width: 50px;
         height: 15px;
     }
-    .fell-right img{
-        width: 0px;
-    }
+    
     #discover{
-        width: 300px;
+        width: 90%;
         flex-direction: column;
         margin: auto;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        text-align: center;
+        text-align: center; */
     }
     .content-discover{
         flex-direction: column;
-        width:300px;
-
+        width:90%;
+        /* margin-top: 100px; */
+        justify-content: space-between; 
+        text-align: center;
+        align-items: center; 
     }
     .discover-left{
         flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        
+        width: 90%;
+        /* justify-content: center; */
+        margin-top: 130px;
     }
     .discover-left h2{
-        font-size: 25px;
+        font-size: 30px;
     }
     .discover-left p{
         font-size: 15px;
-       m
+       
     }
 
     .icone{
+        width: 60%;
+        margin: auto;
         font-size: 10px;
         display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        margin-left: 28px;
+        /* align-items: center;
+        text-align: center; */
+        /* justify-content: center; */
+        /* margin-left: 28px; */
 
     }
     .item {
-        width: 90px;
+        width: 20%px;
         height: 80px;
         justify-content: center;
         text-align: center;
@@ -390,47 +1216,60 @@ a{
         font-size: 10px;
     }
     .discover-right{
-        flex-direction: column;
-        width: 100%;
+        display: flex;
+       flex-direction: column;
+        width: 90%;
+        /* margin-top: 100px;  */
+        justify-content: center;
+        text-align: center;
+        align-items: center;
     }
     .discover-right img{
-        width: 250px;
-        height: 200px;
+        width: 90%;
+      
+        margin-top: 350px; */
     }
 
     #fun{
-        width: 300px;
+        width: 90%;
         flex-direction: column;
-        margin: auto;   
+        margin: auto;
+        height: 700px;
     }
     .content-fun{
         flex-direction: column;
-        width:300px;
-
+        width:90%;
+        margin-top: 70px;
+        
+    }
+    .fun-left{
+        width: 100%;
+        margin-top: 50px;
     }
     .content-fun h1, .content-fun span{
         font-size: 25px;
     }
     .fun-right{
         flex-direction: column;
-        width:300px;
-        align-items: center;
-        text-align: center;
+        width:90%;
+        
+         align-items: center;
+        text-align: center; */
     }
     .contact{
         width: 250px;
-        height: 350px;
+        
         background-color: black;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin-left: -75px;
-        margin-top: 50px;
+    
+    
     }
     .formulaire{
         width: 200px;
-        margin-top: -100px;
+    
     
     }
     label{
@@ -441,19 +1280,19 @@ a{
         width: 150px;
         height: 30px;
     }
-    .bouton button{
+    .formulaire button{
         width: 150px;
         height: 30px;
-        margin-top: 250px;
+        
     }
     #footer{
-        width: 300px;
+        width: 90%;
         display: flex;
         margin: auto;   
     }
     .content-footer{
         display: flex;
-        width:300px;
+        width:90%;
         justify-content: space-between;
         margin: auto;
     }
@@ -474,6 +1313,5 @@ a{
         width: 20px;
         height: 20px;
     }
-
 
 }
