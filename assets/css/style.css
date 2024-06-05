@@ -79,7 +79,6 @@ a{
 .fell-right img{
    width: 350px;
   height: 200px;
-  /* position: absolute; */
   margin: 20px 0 0 215px;
 }
 .fell-right button {
@@ -103,19 +102,18 @@ a{
 .content-discover{
     display: flex;
     width: 100%;
-    padding-top: 120px;
+    padding-top: 50px;
+    gap: 60px; 
     
 }
-.discover-left{
+.discover-left, .discover-right{
     width: 50%;
-    gap: 60px;
+  
 }
-.discover-right{
-    width: 50%;
-}
+
 .discover-right img{
     width: 100%;
-    height: 400px;
+
 }
 .discover-left h2{
     font-size: 45px;
@@ -167,15 +165,13 @@ a{
     text-align: center;
     align-items: center;
     display: flex;
-    height: 100%;
+    height: 50%;
 }
 .fun-right{
     width: 50%;
     display: flex;
     flex-direction: column;
-    height: 100%px;
-    gap: 50px;
-   
+    height: 100%;
 
 }
 .contact{
@@ -199,7 +195,6 @@ a{
     color: white;
     gap: 50px;
     height: 20px;
-    margin-top: 2px;
     height: 31px;
   margin-top: 25px;
 }
@@ -255,7 +250,7 @@ a{
     display: flex;
     font-size: 20px;
     text-align: center;
-  align-items: center;
+    align-items: center;
     justify-content: center;
 
 }
@@ -275,12 +270,12 @@ a{
 }
 .footer-right img {
     display: flex;
- width: 30px;
- height: 30px;
+    width: 30px;
+    height: 30px;
     
 
 }
-@media(max-width:700px){
+@media(max-width:300px){
 
     #header{
         width: 90%;
@@ -352,35 +347,35 @@ a{
     .fell-right button {
         width: 100%;
         max-width: 120px; 
-    min-height: 50px; 
+        min-height: 50px; 
         color: white;
         border-radius: 10px;
         border: none;
-
         background-color: var(--primary);
     }
     .fell-right img{
         display:none;
-        
        
         }
 
     #discover{
         width: 90%;
-        height: 350px;
+        height: 600px;
         margin: auto;
         display: flex;
+        flex-direction: column;
         background-color: var(--bg-bleu);
         padding: 0 40px 0 40px;
     }
     .content-discover{
         display: flex;
+        flex-direction: column;
         width: 100%;
         padding-top: 30px;
         gap: 30px;
     }
     .discover-left{
-        width: 40%;
+        width: 20%;
         gap: 50px;
         
     }
@@ -389,7 +384,7 @@ a{
     }
     .discover-right img{
         width: 100%;
-        height: 300px;
+        
     }
     .discover-left h2{
         font-size: 30px;
@@ -404,7 +399,7 @@ a{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(1, 1fr);
-        width: 50%;
+        width: 30%;
         gap: 10px;
     }
     .item{
@@ -425,29 +420,31 @@ a{
     #fun{
         width: 90%;
         margin: auto;
-        height: 500px;
+        height: 400px;
         background-color:var(--bg-bleu);
         display: flex;
         padding: 0 40px 0 40px;
+        flex-direction: column;
     }
     .content-fun{
         display: flex;
         width: 100%;
         justify-content: space-between;
-
+        flex-direction: column;
+        height: 400px;
     }
     .fun-left{
-        width: 50%;
+        width: 30%;
         text-align: center;
         align-items: center;
         display: flex;
+        
        
     }
     .fun-right{
         width: 50%;
         display: flex;
-        flex-direction: column;
-    
+        height: 300px;
 
     }
     .contact{
@@ -455,17 +452,17 @@ a{
         flex-direction: column;
         align-items: center ;
         justify-content: center;
-        height: 400px; 
-    
+        height: 200px; 
         width: 100%;
         border-radius: 15px;
         background-color: black;
+        margin-top: 20px;
     }
     .formulaire{
         width: 70%;
         justify-content: center;        
         gap: 10px;
-        height: 350px;
+        height: 150px;
         align-items: center;
         margin-top: 0px;
         
@@ -474,7 +471,7 @@ a{
     .fun-right label{
         display: block;
         color: white;
-        height: 15px;
+        height: 10px;
     
     }
     .fun-right input{
@@ -523,7 +520,7 @@ a{
         display: flex;
         font-size: 20px;
         text-align: center;
-    align-items: center;
+        align-items: center;
         justify-content: center;
 
     }
@@ -543,15 +540,15 @@ a{
     }
     .footer-right img {
         display: flex;
-    width: 30px;
-    height: 30px;
+        width: 30px;
+        height: 30px;
         
 
     }
 
 }
 
-@media(max-width:800px){
+@media(max-width:900px){
 
     #header{
         width: 90%;
@@ -822,7 +819,7 @@ a{
 
 }
 
-@media(max-width:1200px){
+@media(max-width:1400px){
 
     #header{
         width: 90%;
@@ -1094,7 +1091,7 @@ a{
 }
 
 
-@media (max-width:600px) {
+@media (max-width:700px) {
 
     #header{
         width: 90%;
@@ -1108,12 +1105,11 @@ a{
         display: flex;
         margin: auto;
         justify-content: space-between;
-        /* text-align: center; */
         align-items: center;
     }
     .logo img{
         width: 60%;
-        /* margin: auto; */
+
     }
     nav ul {
         display: flex;
@@ -1146,10 +1142,8 @@ a{
     .fell-right{
         flex-direction: column;
         width: 90%;
-        /* justify-content: center;
-        text-align: center;
-        align-items: center;
-    } */
+       
+    } 
     .fell-right  h1{
         font-size: 30px;
     }
@@ -1163,6 +1157,7 @@ a{
     
     #discover{
         width: 90%;
+        height: 800px;
         flex-direction: column;
         margin: auto;
         justify-content: space-between;
@@ -1173,8 +1168,6 @@ a{
         display: flex;
         flex-direction: column;
         width:100%;
-      
-    
         justify-content: space-between; 
         text-align: center;
         align-items: center; 
@@ -1219,27 +1212,24 @@ a{
         display: flex;
        flex-direction: column;
         width: 80%;
-        /* margin-top: 100px;  */
         justify-content: center;
         text-align: center;
         align-items: center;
     }
     .discover-right img{
         width: 80%;
-      
-        /* margin-top: 350px;  */
     }
 
     #fun{
         width: 90%;
         flex-direction: column;
         margin: auto;
-        height: 700px;
+        height: 600px;
     }
     .content-fun{
         flex-direction: column;
         width:90%;
-        margin-top: 70px;
+        margin-top: 10px;
         
     }
     .fun-left{
@@ -1252,29 +1242,25 @@ a{
     .fun-right{
         flex-direction: column;
         width:90%;
-        
          align-items: center;
         text-align: center; 
     }
     .contact{
         width: 250px;
-        
         background-color: black;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
     
-    
     }
     .formulaire{
         width: 200px;
     
-    
     }
     label{
         width: 150px;
-        margin-left: 0px;
+    
     }
      .formulaire input{
         width: 150px;
@@ -1313,5 +1299,4 @@ a{
         width: 20px;
         height: 20px;
     }
-}
 }
